@@ -1,7 +1,7 @@
 {
   "name": "Live Desk",
   "short_name": "Live Desk",
-  "description": "Broadcast Operations Engineer interview drill",
+  "description": "Broadcast Operations Engineering",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
