@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Broadcast Operations Engineer interview drill: rounds, retakes, explanations and sources.">
 <meta name="theme-color" content="#120f22" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#f5f3ff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#120f22" media="(prefers-color-scheme: light)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Live Desk">
@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
 <style>
 /* Layout: control-room desk — slim status bar, question monitor on the left (choices stacked like router buttons), explanation monitor on the right, readiness strip below.
-   Look: dark-first violet — near-black ground, purple glow from the top, violet pill controls, iridescent highlight. Light version mirrors it on lavender. */
+   Look: dark violet on every device — near-black ground, purple glow from the top, violet pill controls, iridescent highlight. */
 :root{
   --bg:#07060e; --panel:#120f22; --panel-2:#1a1530; --ink:#f4f2ff; --muted:#a49cc4; --line:#2c2550;
   --accent:#7c4dff; --accent-2:#a77bff; --link:#c3a8ff; --accent-ink:#ffffff; --tally:#ff4f9a;
@@ -35,13 +35,7 @@
   --f-body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
 }
-@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
-  --bg:#f5f3ff; --panel:#ffffff; --panel-2:#f1edff; --ink:#16112d; --muted:#5b5480; --line:#ddd6f6;
-  --accent:#6a3cf0; --accent-2:#8a62ff; --link:#5326d6; --accent-ink:#ffffff; --tally:#e0287a;
-  --glow:#c6b3ff; --iri:linear-gradient(90deg,#0aa5c8,#6a3cf0 40%,#d43fa8 70%,#c88a10);
-  --good:#0f6534; --warn:#8a570a; --bad:#a3192d;
-  --good-bg:#e2f5ea; --warn-bg:#fbefd8; --bad-bg:#fce3e7;
-  --bg-glow:85%; --glow-2:45%; color-scheme:light}}
+/* Dark violet is the look on every device. The light palette below applies only when a viewer explicitly picks light in Claude. */
 :root[data-theme="light"]{
   --bg:#f5f3ff; --panel:#ffffff; --panel-2:#f1edff; --ink:#16112d; --muted:#5b5480; --line:#ddd6f6;
   --accent:#6a3cf0; --accent-2:#8a62ff; --link:#5326d6; --accent-ink:#ffffff; --tally:#e0287a;
